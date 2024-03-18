@@ -1,0 +1,60 @@
+<!--30/11/2023-->
+<!--Signal analysis and processing techniques to identify an ambulance and prioritizing its navigation in a smart city.-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Paolo Alfonso Reyes Ramírez Atmega328p smart-city VSCode">
+        <meta name="author" content="Paolo Reyes">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../images/icon.ico">
+        <title>Smart City</title>
+        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header-subpage">
+        </div>
+        <div id="De_Que_Trata">
+            <div class="container-subpage">
+                <div class="first-section-subpage">
+                    <h1 class="subtitle">What is it about?</h1>
+                    <div class="description">
+                        <img src="../images/smart-city_profile.jpg">
+                        <p>This was a school project with the idea of ​​using microphones and signal processing techniques to identify an ambulance at each intersection in a city and prioritize traffic lights accordingly to minimize crossing time and save lives using the sound of its siren.</p><br>
+                        <p>For this project I used a correlation algorithm running on a real time operating system (FREERTOS) in 4 different esp32 each one processing 2 independent microphones, one remote communication via mqtt and the output sequence of the traffic lights in a multicore approach using 4 threads one for each task. Aditionally all the data is sent to a "Monitoring Office" (my laptop) to visualize the ambulance path, statistics about its time to cross and the correlation coefficients on each microphone.</p><br>
+                        <img src="../images/smart-city_profile.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ejemplos"> 
+            <div class="container">
+                <h1 class="subtitle">Evidence</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="../images/smart-city_1.jpg">
+                    </div>   
+                    <div class="work">
+                        <img src="../images/smart-city_2.jpg">
+                    </div>   
+                    <div class="work">
+                        <img src="../images/smart-city_3.jpg">
+                    </div>   
+                    <div class="work">
+                        <img src="../images/smart-city_4.jpg">
+                    </div>   
+                    <div class="work">
+                        <img src="../images/smart-city_5.jpg">
+                    </div>       
+                </div>    
+            </div>
+        </div>
+        <div class="copyright">
+            <p id="footer-text"></p>
+        </div>
+        <script src="../js/year.js"></script>
+        <script src="../js/backpage.js"></script>
+    </body>
+</html>
