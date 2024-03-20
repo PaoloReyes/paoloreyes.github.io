@@ -1,0 +1,56 @@
+<!--14/03/2024-->
+<!--A small project to mix accelerometer and gyroscope data using a kalman filter to aviod drifting and vibrations. The visualization targets a 3D object rotating using frame rotation matrices in XYZ euler angles.-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Paolo Alfonso Reyes Ramírez 3D Processing esp32 rotation matrix matrices euler angles">
+        <meta name="author" content="Paolo Reyes">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" href="../images/icon.ico">
+        <title>3D Manipulation</title>
+        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header-subpage">
+        </div>
+        <div id="De_Que_Trata">
+            <div class="container-subpage">
+                <div class="first-section-subpage">
+                    <h1 class="subtitle">What is it about?</h1>
+                    <div class="description">
+                        <img src="../images/3D-object-manipulation_profile.jpg">
+                        <p>This project was intended to learn how kalman filters work, the idea was to mix two independent sensor data from an accelerometer and a gyroscope to remove vibrations produced when you only use accelerometer and drifting when you only use gyroscope.</p><br>
+                        <p>The visualization is done by sending the retrieved roll, pitch and yaw angles from the sensors after applying the kalman filter to the roll and pitch angles to my laptop using Processing programming language to use its 3D visualization interface and its reference frame rotations to visualize the object orientation in other form than a tuple of 3 numbers by projecting a 3D fixed object in its original reference frame into a rotated reference frame with the corresponding RPY values.</p><br>
+                        <img src="../images/3D-object-manipulation_profile.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ejemplos"> 
+            <div class="container">
+                <h1 class="subtitle">Evidence</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="../images/3D-object-manipulation_1.jpg">
+                    </div>     
+                    <div class="work">
+                        <video autoplay muted loop playsinline>
+                            <source src="../images/3D-object-manipulation_2.mp4" type="video/mp4">
+                        </video>
+                    </div> 
+                    <div class="work">
+                        <img src="../images/3D-object-manipulation_3.jpg">
+                    </div>     
+                </div>    
+            </div>
+        </div>
+        <div class="copyright">
+            <p id="footer-text"></p>
+        </div>
+        <script src="../js/year.js"></script>
+        <script src="../js/backpage.js"></script>
+    </body>
+</html>
