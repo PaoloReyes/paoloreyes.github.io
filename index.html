@@ -1,189 +1,616 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="Paolo Alfonso Reyes Ramírez">
-        <meta name="author" content="Paolo Reyes">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="./images/icon.ico">
-        <title>Paolo Reyes</title>
-        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-    </head>    
-    <body>        
-        <!-- Inicio -->
-        <div id="inicio">
-            <div class="container">
-                <nav>
-                    <img src="./images/logo.png" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href="#inicio" onclick="closemenu()">Home</a></li>
-                        <li><a href="#about_me" onclick="closemenu()">About Me</a></li>
-                        <li><a href="#services" onclick="closemenu()">Services</a></li>
-                        <li><a href="#projects" onclick="closemenu()">Projects</a></li>
-                        <li><a href="#contact" onclick="closemenu()">Contact Me</a></li>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <h4>¡Hello! I am</h4>
-                    <h1>Paolo <span>Reyes</span></h1>
-                    <h3>Robotics Engineer</h3>
-                </div>
-            </div>
-        </div>
-        <!-- Acerca de Mi -->
-        <div id="about_me">
-            <div class="container" style="margin-top: 8%;">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="./images/paolo.JPG">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="subtitle">About Me</h1>
-                        <h5 class="subsubtitle">Robotist <span>& Coder</span></h5>
-                        <p align="justify">
-                            I am a student of Robotics and Digital Systems Engineering at Tecnológico de Monterrey. Currently, I work at General Electric in the Embedded Software Quality Test Intern Position in Querétaro, MX and I also manage a YouTube channel where I create educational videos on complex engineering topics.<br>
-                            Throughout my life, I have specialized in the field of robotics, where I am capable of independently developing complex robots, including 3D modeling, construction, wiring, and programming.<br>
-                            Diversifying my skills in all these areas has provided me with important abilities such as expertise in mechanical design of robotic systems, operating complex machines and tools such as CNCs, building digital systems for specific applications, and mastering backend programming languages.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Full Stack Developer</span><br>HTML, CSS, JavaScript, Python, C++, C, Java, PHP, SQL, MATLAB, Processing.</li>
-                                <li><span>3D Mechanical Design</span><br>I have been working to create +50Kg robots for the last 4 years using SolidWorks where I have a CSWP certification.</li>
-                                <li><span>Manufacturing</span><br>I am a CNC machinist and proficient in manual metal and woodworking.</li>
-                                <li><span>Electronics</span><br>I specialize in digital systems design and efficient programming of microcontrollers.</li>
-                                <li><span>Video Production</span><br>Video editing and Photography.</li>
-                                <li><span>English</span><br>C1 level.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2023 - Today</span><br>Embedded Software Quality Test Intern at General Electric.</li>
-                                <li><span>2022</span><br>Mentor for 28 robotics engineering teams in Mexico.</li>
-                                <li><span>2022 - 2022</span><br>Control Systems Leader for the Mexican Robotics Team "Robociety".</li>
-                                <li><span>2018 - 2021</span><br>Engineering Leader for the Mexican Robotics Team "WinT 3794".</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2021 - 2025</span><br>Robotics and Digital Systems Engineering at Tecnológico de Monterrey.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Servicios -->
-        <div id="services">
-            <div class="container">
-                <h1 class="subtitle">My Services</h1>
-                <div class="services-list">
-                    <div>
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <h2>Part Manufacturing</h2>
-                        <p align="justify">I can help bring any project to life by manufacturing any part using my CNC machines.</p>
-                        <a href="./services/manufacture">Learn More...</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2>Automation</h2>
-                        <p align="justify">I can assist you in automating processes in your company through the creation of customized programs that can reduce costs, such as inventory self-management, employee control, and more.</p>
-                        <a href="./services/automation">Learn More...</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-microchip"></i>
-                        <h2>Development of Electronic Devices</h2>
-                        <p align="justify">I can help you invent any electronic device that can enhance your daily activities, such as occupancy counters for your business, remote-controlled toys, lights that connect to Alexa, or any other IoT device.</p>
-                        <a href="./services/development">Learn More...</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Proyectos -->
-        <div id="projects">
-            <div class="container">
-                <h1 class="subtitle">My Projects</h1>
-                <div class="work-list-main">
-                    <div class="work"></div>
-                    <div class="work"></div>
-                    <div class="work"></div>
-                </div>
-                <a href="projects" class="btn">See more</a>     
-            </div>
-        </div>
-        <!-- Contacto -->
-        <div id="contacto">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="subtitle">Contact Me</h1>
-                        <p><i class="fas fa-paper-plane"></i>contactopaoloinspires@gmail.com</p>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/paolo.reyes.3114935" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.youtube.com/@Paoloreyes" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.instagram.com/yosoypaolo254" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/paolo-alfonso-reyes-ramirez-663695200" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        <a href="./resources/CV-PaoloReyes.pdf" class="btn btn2">Resume</a>
-                    </div>
-                    <div class="contact-right">
-                        <form name="enviar">
-                            <input type="text" name="Name" placeholder="Name" required id="nombre">
-                            <input type="email" name="Email" placeholder="Email" required id="correo_destino">
-                            <textarea name="Message" rows="6" placeholder="Message" required id="mensaje"></textarea>
-                            <div class="captcha">
-                                <h2 class="subsubtitle">CAPTCHA: </h2>
-                                <div id="image" class="inline" selectable="False"></div>
-                                <i class="fa-solid fa-arrows-rotate reload" onclick="generate()"></i>
-                            </div>
-                            <input type="text" id="captcha" placeholder="Captcha">
-                            <button type="button" class="btn btn2" onclick="send_mail()">Send</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p id="footer-text"></p>
-            </div>
-        </div>
-        <div id="topico">Contacto</div>
-        <script>
-            let tablinks = document.getElementsByClassName("tab-links");
-            let tabcontents = document.getElementsByClassName("tab-contents");
+<html lang="en">
 
-            function opentab(tabname) {
-                for (let i = 0; i < tablinks.length; i++) {
-                    tablinks[i].classList.remove("active-link");
-                }
-                for (let i = 0; i < tabcontents.length; i++) {
-                    tabcontents[i].classList.remove("active-tab");
-                }
-                document.getElementById(tabname).classList.add("active-tab");
-                event.currentTarget.classList.add("active-link");
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paolo Reyes - Personal Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
-            let sidemenu = document.getElementById("sidemenu");
+<body>
+  <main>
+    <!-- #SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
 
-            function openmenu() {
-                sidemenu.style.right = "0px";
-            }
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
 
-            function closemenu() {
-                sidemenu.style.right = "-200px";
-            }
-        </script>
-        <script src="./js/projects_list.js"></script>
-        <script src="./js/main_3.js"></script>
-        <script src="./js/mail.js"></script>
-        <script src="./js/year.js"></script>
-    </body>
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Paolo Reyes</h1>
+
+          <p class="title">Robotics Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:paolo.alfonso.reyes@gmail.com" class="contact-link">paolo.alfonso.reyes@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+525628270625" class="contact-link">+52 (56) 2827-0625</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-06-10">June 10, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Querétaro, Querétaro, México.</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/PaoloReyes254/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yosoypaolo254/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/channel/UCHqwxdkQA5NV59S65NUWgfg" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!-- #main-content -->
+    <div class="main-content">
+
+      <!-- #NAVBAR -->
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!-- #ABOUT -->
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a student of Robotics and Digital Systems Engineering at Tecnológico de Monterrey. Currently, I work at IDR (Institute for the Development in Robotics) as a Software Engineer, where I am responsible for developing an automatic paint generator machine to automate the process of repairing car painting.
+          </p>
+          <p>
+            In addition to my work, I manage a YouTube channel where I create educational videos on complex engineering topics and I am also an entrepreneur, selling products on the MercadoLibre platform.
+          </p>
+        </section>
+
+
+        <!-- service -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Paint Machine</h4>
+
+                <p class="service-item-text">
+                  High end machine that generates paint color automatically.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Website for internal stock control in my e-commerce entrepreneurship.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Youtube Videos</h4>
+
+                <p class="service-item-text">
+                  Complex engineering topics explained in a simple way.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Robotics Teacher</h4>
+
+                <p class="service-item-text">
+                  I am a teacher in mechanics and electronics at IDR.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- testimonials modal -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!-- Experience -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Experience</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://idr.edu.mx/">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.ge.com/">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.facebook.com/WinT3794FRC/">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- #RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Robotics and Digital Systems Engineering <span class="company">(Tecnológico de Monterrey)</span></h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                Currently studying Robotics and Digital Systems Engineering at Tecnológico de Monterrey with a 100% scholarship.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school <span class="company">(Tecmilenio)</span></h4>
+
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+                Participated in the FIRST Robotics Competition, where I learned about mechanics, electronics, 3D design, and programming and started my 
+                journey in the STEM field.<br>
+                Graduated with Excellence.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Jr. Software Engineer <span class="company">(IDR)</span></h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                Lead the development of a precision paint color generating machine, optimizing efficiency and precision in the packaging process within the automotive manufacturing industry.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Python Data Analysis Intern <span class="company">(General Electric)</span></h4>
+
+              <span>2024 — 2024</span>
+
+              <p class="timeline-text">
+                As per my last time at General Electric, I was responsible for the data analysis of the GE9X aviation engine flight data using Python.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              
+              <h4 class="h4 timeline-item-title">Embedded Software Quality Test Intern <span class="company">(General Electric)</span></h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Contributed to Leap1A, Leap1B, Leap1C ang GE9X aviation engines software at General Electric for more than 1 year.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">3D Design</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Electronics</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Mechanics</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!-- #PORTFOLIO-->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Robotics</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>3D Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mechanics</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Electronics</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Programming</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Finance</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Other</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Robotics</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>3D Design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mechanics</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Electronics</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Programming</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Finance</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Other</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list" id="projects-list">
+            <!-- Projects will be populated here -->
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/populate_projects.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
