@@ -9,48 +9,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Paolo Alfonso Reyes Ramírez Youtube CNC Anet A8 Automation Plotter Drawing Writing">
         <meta name="author" content="Paolo Reyes">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" href="../images/icon.ico">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
         <title>Anet A8 Plotter</title>
-        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="header-subpage">
-        </div>
-        <div id="De_Que_Trata">
-            <div class="container-subpage">
-                <div class="first-section-subpage">
-                    <h1 class="subtitle">What is it about?</h1>
-                    <div class="description">
-                        <img src="../images/anetA8-plotter_profile.jpg">
-                        <p>A 3D printer is a device that falls under the category of CNC, which stands for "Computer Numeric Control" or "Control Numérico por Computadora" in Spanish. CNC machines exist in various types, but in one of their significant configurations, they have a system capable of moving a load along a well-defined surface on four sides in the 'x', 'y', and 'z' axes. With this in mind, a 3D printer is a CNC machine where the load is an extruder that melts plastic and allows for the creation of three-dimensional objects. However, following the same principle, if we replace the extruder with a pen, we could draw anything on a two-dimensional surface.</p><br><p>That was the idea behind which I designed a mechanism that attaches to the load of the CNC machine, allowing you to place pencils, pens, and markers. These writing tools are suspended by a series of springs, which provide tolerance for any imperfections on the surface. This ensures that the pen always makes contact with the surface and guarantees consistent and accurate drawing or writing every time.</p><br><p>For its operation, it is sufficient to generate a G-code, similar to what is done with 3D printers, but limiting it to only one layer in height. This will result in a single pass over the surface, creating the complete figure. Depending on the drawing tool used, it may be necessary to make multiple passes to ensure proper coverage and visibility.</p><br><p>Finally, to ensure that the drawing comes out without imperfections, we need to raise the 'z' axis of the CNC when the load travels from one point to another. This prevents unwanted marks or lines in incorrect places. This configuration can be set up in the slicer software, which is used to generate the G-code for the CNC machine. By adjusting the settings in the slicer, we can control the movements of the 'z' axis and ensure accurate and clean drawings.</p><br><p>The entire construction process has been documented on my YouTube channel, and you can access it through the following <a href="https://www.youtube.com/watch?v=VWFGBCQYf1Y"  target="_blank">link</a>.</p>
-                        <img src="../images/anetA8-plotter_profile.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="ejemplos">
-            <div class="container">
-                <h1 class="subtitle">Evidence</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <video autoplay muted loop playsinline>
-                            <source src="../images/anetA8-plotter_1.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="work">
-                        <img src="../images/anetA8-plotter_2.jpg">
-                    </div>
-                    <div class="work">
-                        <img src="../images/anetA8-plotter_3.jpg">
-                    </div>
-                </div>    
-            </div>
-        </div>
-        <div class="copyright">
-            <p id="footer-text"></p>
-        </div>
-        <script src="../js/year.js"></script>
-        <script src="../js/backpage.js"></script>
+        <main>
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">Anet A8 Plotter</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>A 3D printer is a device that falls under the category of CNC, which stands for "Computer Numeric Control" or "Control Numérico por Computadora" in Spanish. CNC machines exist in various types, but in one of their significant configurations, they have a system capable of moving a load along a well-defined surface on four sides in the 'x', 'y', and 'z' axes. With this in mind, a 3D printer is a CNC machine where the load is an extruder that melts plastic and allows for the creation of three-dimensional objects. However, following the same principle, if we replace the extruder with a pen, we could draw anything on a two-dimensional surface.</p><br>
+                    <p>That was the idea behind which I designed a mechanism that attaches to the load of the CNC machine, allowing you to place pencils, pens, and markers. These writing tools are suspended by a series of springs, which provide tolerance for any imperfections on the surface. This ensures that the pen always makes contact with the surface and guarantees consistent and accurate drawing or writing every time.</p><br>
+                    <p>For its operation, it is sufficient to generate a G-code, similar to what is done with 3D printers, but limiting it to only one layer in height. This will result in a single pass over the surface, creating the complete figure. Depending on the drawing tool used, it may be necessary to make multiple passes to ensure proper coverage and visibility.</p><br>
+                    <p>Finally, to ensure that the drawing comes out without imperfections, we need to raise the 'z' axis of the CNC when the load travels from one point to another. This prevents unwanted marks or lines in incorrect places. This configuration can be set up in the slicer software, which is used to generate the G-code for the CNC machine. By adjusting the settings in the slicer, we can control the movements of the 'z' axis and ensure accurate and clean drawings.</p><br>
+                    <p>The entire construction process has been documented on my YouTube channel, and you can access it through the following <a class="link" href="https://www.youtube.com/watch?v=VWFGBCQYf1Y" target="_blank">link</a>.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">Evidence</h3>
+                    <ul class="service-list projects">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/anetA8-plotter_profile.jpg" alt="Anet A8 Plotter Profile" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <video autoplay muted loop playsinline class="image">
+                                    <source src="../assets/images/anetA8-plotter_1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/anetA8-plotter_2.jpg" alt="plotter 2" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/anetA8-plotter_3.jpg" alt="plotter 3" class="image">
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
     </body>
 </html>

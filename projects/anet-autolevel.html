@@ -9,57 +9,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Paolo Alfonso Reyes Ramírez Youtube CNC Anet A8 Autolevel Automation">
         <meta name="author" content="Paolo Reyes">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" href="../images/icon.ico">
+        <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
         <title>Anet Autolevel</title>
-        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="header-subpage">
-        </div>
-        <div id="De_Que_Trata">
-            <div class="container-subpage">
-                <div class="first-section-subpage">
-                    <h1 class="subtitle">What is it about?</h1>
-                    <div class="description">
-                        <img src="../images/anet-autolevel_profile.jpg">
-                        <p>The Anet A8 is, or at least was, the cheapest 3D printer on the market in April 2020 when I purchased it for a price not exceeding 3600 Mexican pesos. Due to its low cost, it's evident that it lacks many of the premium features found in other printers, including automatic bed leveling. Automatic bed leveling, achieved through a distance sensor, allows the printer to determine the height of the bed at all points, enabling it to print under more challenging conditions, such as on inclined surfaces.</p><br><p>The advantage of having automatic bed leveling is that we can print for longer periods without the need to recalibrate the heated bed, which can be a time-consuming process. That's why I considered it significant to implement this feature in my printer by adapting the existing hardware. The process involved a series of simple steps, which I documented in a video for my YouTube channel. You can find the video at the following <a href="https://www.youtube.com/watch?v=YItKc0Y6AW0"  target="_blank">link</a>.</p><br><p>In any case, in the following list I summarize the implementation process:</p>
-                        <ul>
-                            <li>Desolder z axis limit switch.</li>
-                            <li>Solder inductive sensor in place of limit switch.</li>
-                            <li>Modify the printer firmware to accept the auto level command.</li>
-                            <li>Cover the printing surface with a conductive material.</li>
-                            <li>Create a print profile with the auto leveling option.</li>
-                            <li>Start printing.</li>
-                        </ul>
-                        <p>After carrying out this process, I had the advantages of not having to recalibrate the printer in more than 6 months of continuous use, maintaining a high print quality in my pieces.</p>
-                        <img src="../images/anet-autolevel_profile.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="ejemplos">
-            <div class="container">
-                <h1 class="subtitle">Evidence</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="../images/level_1.jpg">
-                    </div>
-                    <div class="work">
-                        <img src="../images/level_2.jpg">
-                    </div>
-                    <div class="work">
-                        <video autoplay muted loop playsinline>
-                            <source src="../images/level_3.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>    
-            </div>
-        </div>
-        <div class="copyright">
-            <p id="footer-text"></p>
-        </div>
-        <script src="../js/year.js"></script>
-        <script src="../js/backpage.js"></script>
+        <main>
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">Anet Autolevel</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>The Anet A8 is, or at least was, the cheapest 3D printer on the market in April 2020 when I purchased it for a price not exceeding 3600 Mexican pesos. Due to its low cost, it's evident that it lacks many of the premium features found in other printers, including automatic bed leveling. Automatic bed leveling, achieved through a distance sensor, allows the printer to determine the height of the bed at all points, enabling it to print under more challenging conditions, such as on inclined surfaces.</p><br>
+                    <p>The advantage of having automatic bed leveling is that we can print for longer periods without the need to recalibrate the heated bed, which can be a time-consuming process. That's why I considered it significant to implement this feature in my printer by adapting the existing hardware. The process involved a series of simple steps, which I documented in a video for my YouTube channel. You can find the video at the following <a class="link" href="https://www.youtube.com/watch?v=YItKc0Y6AW0" target="_blank">link</a>.</p><br>
+                    <p>In any case, in the following list I summarize the implementation process:</p>
+                    <ul class="text-lists">
+                        <li>Desolder z axis limit switch.</li>
+                        <li>Solder inductive sensor in place of limit switch.</li>
+                        <li>Modify the printer firmware to accept the auto level command.</li>
+                        <li>Cover the printing surface with a conductive material.</li>
+                        <li>Create a print profile with the auto leveling option.</li>
+                        <li>Start printing.</li>
+                    </ul>
+                    <p>After carrying out this process, I had the advantages of not having to recalibrate the printer in more than 6 months of continuous use, maintaining a high print quality in my pieces.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">Evidence</h3>
+                    <ul class="service-list projects">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/anet-autolevel_profile.jpg" alt="level 1" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/level_1.jpg" alt="level 1" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/level_2.jpg" alt="level 2" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <video autoplay muted loop playsinline class="image">
+                                    <source src="../assets/images/level_3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
     </body>
 </html>

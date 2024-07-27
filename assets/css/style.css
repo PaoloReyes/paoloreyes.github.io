@@ -1738,6 +1738,14 @@ textarea.form-input::-webkit-resizer { display: none; }
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .text-lists {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .text-lists li { list-style: disc;}
+
   /* testimonials */
 
   .testimonials-item { min-width: calc(50% - 15px); }

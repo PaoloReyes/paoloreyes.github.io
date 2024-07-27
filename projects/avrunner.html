@@ -1,6 +1,6 @@
 <!--03/11/2023-->
 <!--Programming-->
-<!--A tool for creating, building and flashing avr software into microcontrollers using VSCode.-->
+<!--A tool for creating, building and flashing AVR software into microcontrollers using VSCode.-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -9,48 +9,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="Paolo Alfonso Reyes Ramírez Atmega328p AVRunner VSCode">
         <meta name="author" content="Paolo Reyes">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" href="../images/icon.ico">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
         <title>AVRunner</title>
-        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="header-subpage">
-        </div>
-        <div id="De_Que_Trata">
-            <div class="container-subpage">
-                <div class="first-section-subpage">
-                    <h1 class="subtitle">What is it about?</h1>
-                    <div class="description">
-                        <img src="../images/avrunner_profile.jpg">
-                        <p>AVRunner is a groundbreaking tool designed to transform the landscape of AVR microcontroller development by seamlessly integrating the power and flexibility of Visual Studio Code (VSCode). No more wrestling with clunky, outdated IDEs – AVRunner brings a breath of fresh air to the world of embedded systems programming.</p><br>
-                        <p>Gone are the days of cumbersome IDEs with limited functionality and steep learning curves. AVRunner simplifies the development process by harnessing the robust capabilities of VSCode, a popular and versatile code editor trusted by developers worldwide. With AVRunner, you can wave goodbye to frustration and embrace a smoother, more intuitive coding experience.</p><br>
-                        <p>I made an incredible <a href="https://www.youtube.com/watch?v=eZrUGT6nL3o" target="_blank">video</a> showing its functionality and all the details for installation ca be found in its open source <a href="https://github.com/PaoloReyes/AVRunner" target="_blank">github</a> repository.</p>
-                        <img src="../images/avrunner_profile.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="ejemplos"> 
-            <div class="container">
-                <h1 class="subtitle">Evidence</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="../images/avrunner_1.jpg">
-                    </div>   
-                    <div class="work">
-                        <img src="../images/avrunner_2.jpg">
-                    </div>   
-                    <div class="work">
-                        <img src="../images/avrunner_3.jpg">
-                    </div>       
-                </div>    
-            </div>
-        </div>
-        <div class="copyright">
-            <p id="footer-text"></p>
-        </div>
-        <script src="../js/year.js"></script>
-        <script src="../js/backpage.js"></script>
+        <main>
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">AVRunner</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>AVRunner is a groundbreaking tool designed to transform the landscape of AVR microcontroller development by seamlessly integrating the power and flexibility of Visual Studio Code (VSCode). No more wrestling with clunky, outdated IDEs – AVRunner brings a breath of fresh air to the world of embedded systems programming.</p><br>
+                    
+                    <p>Gone are the days of cumbersome IDEs with limited functionality and steep learning curves. AVRunner simplifies the development process by harnessing the robust capabilities of VSCode, a popular and versatile code editor trusted by developers worldwide. With AVRunner, you can wave goodbye to frustration and embrace a smoother, more intuitive coding experience.</p><br>
+                    
+                    <p>I made an incredible <a class="link" href="https://www.youtube.com/watch?v=eZrUGT6nL3o" target="_blank">video</a> showing its functionality and all the details for installation can be found in its open-source <a class="link" href="https://github.com/PaoloReyes/AVRunner" target="_blank">GitHub</a> repository.</p>
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">Evidence</h3>
+                    <ul class="service-list projects">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/avrunner_profile.jpg" alt="AVRunner Profile" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/avrunner_1.jpg" alt="AVRunner 1" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/avrunner_2.jpg" alt="AVRunner 2" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/avrunner_3.jpg" alt="AVRunner 3" class="image">
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
     </body>
 </html>
