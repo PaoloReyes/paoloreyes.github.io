@@ -11,7 +11,7 @@ for (const project in projects) {
 
     htmlString += `
         <li class="project-item active" data-filter-item data-category="${category}">
-        <a href="#">
+        <a href="/projects/${project}">
             <figure class="project-img">
             <div class="project-item-icon-box">
                 <ion-icon name="eye-outline"></ion-icon>
