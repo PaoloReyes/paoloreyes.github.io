@@ -7,72 +7,82 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Paolo Alfonso Reyes Ramírez Artifitial Vision Human Body Tracking Depth Cameras YouTube Artifitial Intelligence">
+        <meta name="keywords" content="Paolo Alfonso Reyes Ramírez Artificial Vision Human Body Tracking Depth Cameras YouTube Artificial Intelligence">
         <meta name="author" content="Paolo Reyes">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="icon" href="../images/icon.ico">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/images/logo.ico" type="image/x-icon">
         <title>Skeleton Tracking</title>
-        <script src="https://kit.fontawesome.com/9041eafba2.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="header-subpage">
-        </div>
-        <div id="De_Que_Trata">
-            <div class="container-subpage">
-                <div class="first-section-subpage">
-                    <h1 class="subtitle">What is it about?</h1>
-                    <div class="description">
-                        <img src="../images/skeleton-tracking_profile.jpg">
-                        <p>This is a very interesting project as it repurposes a Kinect from an Xbox 360 to use it as a depth camera and employ it as a user interface method instead of traditional methods.</p><br>
-                        <p>As examples of application for this sensor, I created a robot in the style of an arm with two degrees of freedom that replicated the movement of one of my arms using forward kinematics. I also developed a more complex second prototype of an intelligent arm that could reach any point in space autonomously using inverse kinematics.</p><br>
-                        <p>In addition to my projects, I made a great contribution to the community as it seemed that all the resources on this topic had disappeared over 10 years ago. Somehow, I was able to retrieve them and share a <a href="https://youtu.be/9aNdWmKoTUM" target="_blank">video</a> about the installation process and how to start programming this depth camera, completely free and in Spanish. This has been recognized by many users on the internet.</p><br>
-                        <p>Similarly, the two projects I mentioned earlier were documented, and the process to replicate them can be found in each of the following two videos:</p>
-                        <ul>
-                            <li><a href="https://youtu.be/Oh6WBOk57_8" target="_blank">Direct kinematics.</a></li>
-                            <li><a href="https://youtu.be/8TaDrmI6Aas" target="_blank">Inverse kinematics.</a></li>
-                        </ul>
-                        <p>Similarly, in the following <a href="https://youtu.be/fQrLefnj2xo" target="_blank">video</a>, I demonstrate how it is possible to establish communication with Arduino to use signals from the depth camera to control external devices.</p>
-                        <img src="../images/skeleton-tracking_profile.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="ejemplos"> 
-            <div class="container">
-                <h1 class="subtitle">Evidence</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="../images/skeleton-tracking_1.jpg">
-                    </div>   
-                    <div class="work">
-                        <img src="../images/skeleton-tracking_2.jpg">
-                    </div>   
-                    <div class="work">
-                        <img src="../images/skeleton-tracking_3.jpg">
-                    </div>   
-                    <div class="work">
-                        <img src="../images/skeleton-tracking_4.jpg">
-                    </div>  
-                    <div class="work">
-                        <img src="../images/skeleton-tracking_5.jpg">
-                    </div> 
-                    <div class="work">
-                        <video autoplay muted loop playsinline>
-                            <source src="../images/skeleton-tracking_6.mp4" type="video/mp4">
-                        </video>
-                    </div> 
-                    <div class="work">
-                        <video autoplay muted loop playsinline>
-                            <source src="../images/skeleton-tracking_7.mp4" type="video/mp4">
-                        </video>
-                    </div> 
-                </div>    
-            </div>
-        </div>
-        <div class="copyright">
-            <p id="footer-text"></p>
-        </div>
-        <script src="../js/year.js"></script>
-        <script src="../js/backpage.js"></script>
+        <main>
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">Skeleton Tracking</h2>
+                </header>
+                <section class="about-text">
+                    <p>This is a very interesting project as it repurposes a Kinect from an Xbox 360 to use it as a depth camera and employ it as a user interface method instead of traditional methods.</p><br>
+                    <p>As examples of application for this sensor, I created a robot in the style of an arm with two degrees of freedom that replicated the movement of one of my arms using forward kinematics. I also developed a more complex second prototype of an intelligent arm that could reach any point in space autonomously using inverse kinematics.</p><br>
+                    <p>In addition to my projects, I made a great contribution to the community as it seemed that all the resources on this topic had disappeared over 10 years ago. Somehow, I was able to retrieve them and share a <a href="https://youtu.be/9aNdWmKoTUM" target="_blank" class="link">video</a> about the installation process and how to start programming this depth camera, completely free and in Spanish. This has been recognized by many users on the internet.</p><br>
+                    <p>Similarly, the two projects I mentioned earlier were documented, and the process to replicate them can be found in each of the following two videos:</p>
+                    <ul class="text-lists">
+                        <li><a href="https://youtu.be/Oh6WBOk57_8" target="_blank" class="link">Direct kinematics.</a></li>
+                        <li><a href="https://youtu.be/8TaDrmI6Aas" target="_blank" class="link">Inverse kinematics.</a></li>
+                    </ul>
+                    <p>Similarly, in the following <a href="https://youtu.be/fQrLefnj2xo" target="_blank" class="link">video</a>, I demonstrate how it is possible to establish communication with Arduino to use signals from the depth camera to control external devices.</p>
+                </section>
+                <section class="service">
+                    <h3 class="h3 service-title">Evidence</h3>
+                    <ul class="service-list projects">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/skeleton-tracking_profile.jpg" alt="Skeleton Tracking Image Profile" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/skeleton-tracking_1.jpg" alt="Skeleton Tracking Image 1" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/skeleton-tracking_2.jpg" alt="Skeleton Tracking Image 2" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/skeleton-tracking_3.jpg" alt="Skeleton Tracking Image 3" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/skeleton-tracking_4.jpg" alt="Skeleton Tracking Image 4" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="../assets/images/skeleton-tracking_5.jpg" alt="Skeleton Tracking Image 5" class="image">
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <video autoplay muted loop playsinline class="image">
+                                    <source src="../assets/images/skeleton-tracking_6.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <video autoplay muted loop playsinline class="image">
+                                    <source src="../assets/images/skeleton-tracking_7.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </main>
     </body>
 </html>
